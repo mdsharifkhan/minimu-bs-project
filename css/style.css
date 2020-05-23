@@ -1,0 +1,192 @@
+/*
+			Master Stylesheet
+	===============================================
+	Template Name : 
+	Author : Mohammed Sharif.
+	Author URL : https://www.facebook.com/mohammedsharif.geniusboy.5
+	Description :
+	Version :1.0.0
+	Tag :
+*/
+
+/*
+			Table of Contents
+	===============================================
+	1.Typrography
+	2.Header
+	3.Banner
+	4.Blog
+	5.Newsletter
+	6.Another Blog
+	7.Footer
+
+*/
+/* ============================
+		typrography
+============================ */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Playfair+Display&family=Ubuntu:wght@300&display=swap');
+
+*, *::after, *::before{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	color: #626262;
+}
+h1, h2, h3, h4, h5, h6{
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 35px;
+}
+p,ul,h1, h2, h3, h4, h5, h6{
+	margin: 0;
+	padding: 0;
+}
+header, section, footer{
+	padding: 35px 0;
+}
+.container-fluid {
+    width: 95% !important;
+}
+
+/* ============================
+		style for header
+============================= */
+header .nav-link{
+	text-transform: uppercase;
+	color: #626262 !important;
+	padding: 0 60px !important;
+}
+header li:last-child .nav-link{
+	padding-right: 0 !important;
+}
+header ul li:hover .nav-link{
+	color: #000000 !important;
+	transition: 0.3s all ease-in-out;
+}
+.navbar-toggler{
+	font-size: 26px;
+	color: #000000 !important;
+	border-color: #000000 !important;
+	transition: 0.3s all ease-in-out;
+}
+.navbar-toggler:hover{
+	color: #626262 !important;
+	border-color: #626262 !important;
+}
+.navbar-nav{
+	text-align: center;
+}
+/* style for banner */
+#banner{
+	background-image: url('../img/banner.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin: 50px 0;
+}
+#banner .row{
+	min-height: 560px;
+}
+/* ============================
+		style for blog
+============================= */
+.blog-text{
+	font-family: 'Ubuntu', sans-serif;
+	text-transform: uppercase;
+	font-weight: 300;
+	color: #b4ad9e; 
+}
+h2{
+	padding: 25px 0;
+}
+.blog-content{
+	line-height: 24px;
+	padding-bottom: 35px;
+}
+.card{
+	padding: 70px 0;
+}
+.card-img-top, .card{
+	border: none;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+.card .blog-text{
+	padding-top: 25px;
+}
+/* ========================
+	style for newsletter
+========================== */
+#newsletter,footer{
+	background-color: #f0f0f0;
+	padding-bottom: 100px;
+}
+#newsletter h2{
+	text-align: center;
+	color: #333333;
+}
+.input-group{
+	border-bottom: 1px solid #000000;
+}
+.form-control{
+	border: none;
+	background: transparent;
+	font-size: 17px;
+	border-radius: 0;
+}
+.form-control:focus {
+    color: #495057;
+    background-color: transparent;
+    outline: 0;
+    box-shadow: none;
+    border: none;
+}
+.form-control::placeholder{
+	font-size: 17px;
+}
+.input-group-text{
+	border: none;
+	background: transparent;
+	cursor: pointer;
+}
+/* ====================================
+	style for another Blog 
+==================================== */
+/* button  */
+#anotherBlog{
+	padding-bottom: 400px;
+}
+.btn{
+	padding: 15px 25px;
+	font-size: 20px;
+	background-color: #ffffff;
+	border: none;
+	border: 1px solid #333333;
+	color: #626262;
+	width: 150px;
+	border-radius: 0;
+	transition: 0.3s all ease-in-out;
+}
+.btn:hover{
+	background-color: #626262;
+	color: #ffffff;
+}
+.btn:focus{
+	box-shadow: none;
+}
+/* ===================================
+	style fo footer
+==================================== */
+footer{
+	padding-bottom: 35px !important;
+}
+footer li a{
+	color: #000000;
+	text-decoration: none !important;
+}
